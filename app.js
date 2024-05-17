@@ -58,7 +58,7 @@ app.post('/api/data', (req, res) => {
   let data = {
     temperature: req.body.temperature,
     humidity: req.body.humidity,
-    boolean: req.body.bool,
+    istrue: req.body.istrue,
   };
   let sql = 'INSERT INTO data SET ?';
   conexion.query(sql, data, function (error, data) {
